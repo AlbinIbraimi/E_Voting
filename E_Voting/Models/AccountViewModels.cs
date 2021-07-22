@@ -79,6 +79,14 @@ namespace E_Voting.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public string Surname { get; set; }
+        [Required]
+        [Display(Name="Edinstven Maticen Broj (EMBG)")]
+        public string EMBG { get; set; }
     }
 
     public class ResetPasswordViewModel
