@@ -6,24 +6,13 @@ using System.Web.Mvc;
 
 namespace E_Voting.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            return View();
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
+            // Da se izlistaat site Kandidati od baza 
+            // Da se kreira kontorller za dodoavanje na kandidati vo baza.
             return View();
         }
     }

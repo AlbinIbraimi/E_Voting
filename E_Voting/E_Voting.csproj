@@ -177,8 +177,13 @@
     <Compile Include="Migrations\202107211756044_InitialMigration.Designer.cs">
       <DependentUpon>202107211756044_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202107301610338_CandidateMigration.cs" />
+    <Compile Include="Migrations\202107301610338_CandidateMigration.Designer.cs">
+      <DependentUpon>202107301610338_CandidateMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Domain\Candidate.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -260,6 +265,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202107211756044_InitialMigration.resx">
       <DependentUpon>202107211756044_InitialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107301610338_CandidateMigration.resx">
+      <DependentUpon>202107301610338_CandidateMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

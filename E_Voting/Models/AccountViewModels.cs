@@ -48,18 +48,16 @@ namespace E_Voting.Models
 
     public class LoginViewModel
     {
-        [Required]
-        [Display(Name = "Email")]
-        [EmailAddress]
-        public string Email { get; set; }
 
         [Required]
-        [DataType(DataType.Password)]
-        [Display(Name = "Password")]
-        public string Password { get; set; }
-
-        [Display(Name = "Remember me?")]
-        public bool RememberMe { get; set; }
+        [Display(Name = "Ime")]
+        public string Name { get; set; }
+        [Required]
+        [Display(Name = "Prezime")]
+        public string Surname { get; set; }
+        [Required]
+        [Display(Name = "Edinstven Maticen Broj (EMBG)")]
+        public string EMBG { get; set; }
     }
 
     public class RegisterViewModel
